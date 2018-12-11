@@ -13,6 +13,7 @@
 
 
 #include "tuio_udp_receiver.h"
+#include "my_tuio_client.h"
 
 
 #endif /* tuio1_c_h */
