@@ -1,0 +1,6 @@
+[submodule "contrib/tuio1"]
+	path = contrib/tuio1
+	url = https://github.com/mkalten/TUIO11_CPP.git
+[submodule "contrib/tuio2"]
+	path = contrib/tuio2
+	url = https://github.com/mkalten/TUIO20_CPP
