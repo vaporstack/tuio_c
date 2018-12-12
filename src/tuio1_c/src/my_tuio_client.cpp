@@ -155,7 +155,7 @@ extern "C"
 
 		TuioClient client(osc_receiver);
 		client.addTuioListener(dump);
-		client.connect(true);
+		client.connect(false);
 
 		rec->receiver = osc_receiver;
 		rec->dump     = dump;
