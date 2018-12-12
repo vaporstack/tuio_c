@@ -15,5 +15,8 @@
 #include "tuio_udp_receiver.h"
 #include "my_tuio_client.h"
 
+void tuio_c_init(void);
+void tuio_c_deinit(void);
+
 
 #endif /* tuio1_c_h */

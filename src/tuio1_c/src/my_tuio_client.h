@@ -9,6 +9,7 @@
 #ifndef my_tuio_client_h
 #define my_tuio_client_h
 
+#include <stdbool.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -24,10 +25,11 @@ extern "C" {
 		 my_tuio_cursor_rm_callback cur_rem;
 		 void* receiver;
 		 void* dump;
+		 void* client;
 		 
 	 } MyTuioClientAttrs;
 	
-	
+	void my_tuio_client_connect(void* wrap, bool blocking);
 	void* my_tuio_client_create(MyTuioClientAttrs attr, unsigned int port);
 	void  my_tuio_client_destroy(void* wrap);
 	

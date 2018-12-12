@@ -134,7 +134,21 @@ void TuioDump::refresh(TuioTime frameTime)
 extern "C"
 {
 #endif
+	void my_tuio_client_connect(void* wrap, bool blocking)
+	{
+		MyTuioClientAttrs* rec = (MyTuioClientAttrs*)wrap;
 
+		//OscReceiver* osc_receiver = (OscReceiver*)client->receiver;
+		TuioClient* client = (TuioClient*)rec->client;
+		if ( blocking )
+		{
+			client->connect(true);
+		}else{
+			client->connect();
+		}
+		
+	}
+	
 	void my_tuio_client_update(void* wrap)
 	{
 	}
@@ -153,10 +167,11 @@ extern "C"
 		//}
 		TuioDump* dump = create_tuiodump(attr);
 
-		TuioClient client(osc_receiver);
-		client.addTuioListener(dump);
-		client.connect(false);
-
+		TuioClient* client = new TuioClient(osc_receiver);
+		client->addTuioListener(dump);
+		//client->connect();
+		
+		rec->client = client;
 		rec->receiver = osc_receiver;
 		rec->dump     = dump;
 		return rec;
@@ -164,10 +179,10 @@ extern "C"
 
 	void my_tuio_client_destroy(void* wrap)
 	{
-		MyTuioClientAttrs* client = (MyTuioClientAttrs*)wrap;
+		MyTuioClientAttrs* rec = (MyTuioClientAttrs*)wrap;
 
-		OscReceiver* osc_receiver = (OscReceiver*)client->receiver;
-		TuioDump*    dump	 = (TuioDump*)client->dump;
+		OscReceiver* osc_receiver = (OscReceiver*)rec->receiver;
+		TuioDump*    dump	 = (TuioDump*)rec->dump;
 		delete osc_receiver;
 		delete dump;
 	}
