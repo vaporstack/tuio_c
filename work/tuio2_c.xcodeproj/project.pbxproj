@@ -76,6 +76,7 @@
 		57CF49A121C43B3C008D4ADC /* TuioObject.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF496421C43B3C008D4ADC /* TuioObject.o */; };
 		57CF49A221C43B3C008D4ADC /* TcpReceiver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF496521C43B3C008D4ADC /* TcpReceiver.o */; };
 		57CF49A321C43B3C008D4ADC /* TcpReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF496621C43B3C008D4ADC /* TcpReceiver.h */; };
+		57CF49A621C43E66008D4ADC /* tuio2_c_test.c in Sources */ = {isa = PBXBuildFile; fileRef = 57CF49A521C43E66008D4ADC /* tuio2_c_test.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -150,6 +151,7 @@
 		57CF496421C43B3C008D4ADC /* TuioObject.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioObject.o; sourceTree = "<group>"; };
 		57CF496521C43B3C008D4ADC /* TcpReceiver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TcpReceiver.o; sourceTree = "<group>"; };
 		57CF496621C43B3C008D4ADC /* TcpReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpReceiver.h; sourceTree = "<group>"; };
+		57CF49A521C43E66008D4ADC /* tuio2_c_test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio2_c_test.c; sourceTree = "<group>"; };
 		57D8E29621C06E2900892E0C /* libtuio_c.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtuio_c.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -277,9 +279,19 @@
 			path = ../contrib/tuio2/TUIO2;
 			sourceTree = "<group>";
 		};
+		57CF49A421C43E66008D4ADC /* test */ = {
+			isa = PBXGroup;
+			children = (
+				57CF49A521C43E66008D4ADC /* tuio2_c_test.c */,
+			);
+			name = test;
+			path = ../src/tuio2_c/test;
+			sourceTree = "<group>";
+		};
 		57D8E28D21C06E2900892E0C = {
 			isa = PBXGroup;
 			children = (
+				57CF49A421C43E66008D4ADC /* test */,
 				57CF491721C43B28008D4ADC /* src */,
 				57CF492821C43B3C008D4ADC /* TUIO2 */,
 				57D8E29721C06E2900892E0C /* Products */,
@@ -391,6 +403,7 @@
 				57CF498E21C43B3C008D4ADC /* TuioServer.cpp in Sources */,
 				57CF498D21C43B3C008D4ADC /* TuioToken.cpp in Sources */,
 				57CF499C21C43B3C008D4ADC /* TuioManager.cpp in Sources */,
+				57CF49A621C43E66008D4ADC /* tuio2_c_test.c in Sources */,
 				57CF497D21C43B3C008D4ADC /* TuioDispatcher.cpp in Sources */,
 				57CF492221C43B28008D4ADC /* tuio_udp_receiver.cpp in Sources */,
 				57CF497621C43B3C008D4ADC /* TuioClient.cpp in Sources */,

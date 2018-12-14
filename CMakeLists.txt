@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 3.0)
 
 SET(CMAKE_FIND_LIBRARY_SUFFIXES ".a")
 
-macro(build_tuio name makefilepath)
+macro(build_tuio name uppercase makefilepath)
 	set(libname ${name}_c)
 	project(${name})
 	set(${libname}_VERSION_MAJOR 0)
@@ -27,14 +27,15 @@ macro(build_tuio name makefilepath)
 	#target_include_directories(${libname} PRIVATE contrib/${name}/oscpack)
 
 	set(tname ${libname}_test)
-	link_directories(contrib/${name})
-	link_libraries(libTUIO.a ${libname})
+	link_directories(contrib/${name}
+			contrib/${name}/demos)
+	link_libraries(lib${uppercase}.a ${libname})
 
 	add_executable(${tname} ${test_src} ${name})
 endmacro(build_tuio)
 
 # build_tuio(tuio1 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio1)
-build_tuio(tuio2 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio2/demos)
+build_tuio(tuio2 TUIO2 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio2/demos)
 
 
 # build_tuio(tuio2 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio2/demos)
