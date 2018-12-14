@@ -20,9 +20,9 @@ macro(build_tuio name makefilepath)
 	  WORKING_DIRECTORY ${makefilepath}
 	)
 
-	file(GLOB_RECURSE sources src/${name}_c/src/*.c src/${name}_c/src/*.cpp)
+	file(GLOB_RECURSE sources src/${name}_c/src/*.c src/${name}_c/src/TUIO2/*.c src/${name}_c/src/*.cpp)
 	file(GLOB test_src src/${name}_c/test/*.c)
-	add_library(${libname} STATIC ${sources} tuio1)
+	add_library(${libname} STATIC ${sources} ${name})
 	target_include_directories(${libname} PRIVATE contrib/${name} contrib/${name}/oscpack)
 	#target_include_directories(${libname} PRIVATE contrib/${name}/oscpack)
 
@@ -30,10 +30,11 @@ macro(build_tuio name makefilepath)
 	link_directories(contrib/${name})
 	link_libraries(libTUIO.a ${libname})
 
-	add_executable(${tname} ${test_src} tuio1)
+	add_executable(${tname} ${test_src} ${name})
 endmacro(build_tuio)
 
-build_tuio(tuio1 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio1)
+# build_tuio(tuio1 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio1)
+build_tuio(tuio2 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio2/demos)
 
 
 # build_tuio(tuio2 ${CMAKE_CURRENT_SOURCE_DIR}/contrib/tuio2/demos)

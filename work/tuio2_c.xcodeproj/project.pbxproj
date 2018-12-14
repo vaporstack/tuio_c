@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		57CF492021C43B28008D4ADC /* tuio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF491821C43B28008D4ADC /* tuio_client.h */; };
+		57CF492121C43B28008D4ADC /* tuio_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF491921C43B28008D4ADC /* tuio_c.h */; };
+		57CF492221C43B28008D4ADC /* tuio_udp_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF491A21C43B28008D4ADC /* tuio_udp_receiver.cpp */; };
+		57CF492321C43B28008D4ADC /* my_tuio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF491B21C43B28008D4ADC /* my_tuio_client.h */; };
+		57CF492421C43B28008D4ADC /* tuio_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 57CF491C21C43B28008D4ADC /* tuio_client.c */; };
+		57CF492521C43B28008D4ADC /* tuio_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 57CF491D21C43B28008D4ADC /* tuio_c.c */; };
+		57CF492621C43B28008D4ADC /* my_tuio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF491E21C43B28008D4ADC /* my_tuio_client.cpp */; };
+		57CF492721C43B28008D4ADC /* tuio_udp_receiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF491F21C43B28008D4ADC /* tuio_udp_receiver.h */; };
+		57CF496721C43B3C008D4ADC /* TuioSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF492921C43B3C008D4ADC /* TuioSource.h */; };
+		57CF496821C43B3C008D4ADC /* TuioPointer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF492A21C43B3C008D4ADC /* TuioPointer.cpp */; };
+		57CF496921C43B3C008D4ADC /* FlashSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF492B21C43B3C008D4ADC /* FlashSender.cpp */; };
+		57CF496A21C43B3C008D4ADC /* OscSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF492C21C43B3C008D4ADC /* OscSender.h */; };
+		57CF496B21C43B3C008D4ADC /* TuioManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF492D21C43B3C008D4ADC /* TuioManager.h */; };
+		57CF496C21C43B3C008D4ADC /* TuioManager.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF492E21C43B3C008D4ADC /* TuioManager.o */; };
+		57CF496D21C43B3C008D4ADC /* UdpReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF492F21C43B3C008D4ADC /* UdpReceiver.h */; };
+		57CF496E21C43B3C008D4ADC /* UdpReceiver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF493021C43B3C008D4ADC /* UdpReceiver.o */; };
+		57CF496F21C43B3C008D4ADC /* TuioObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493121C43B3C008D4ADC /* TuioObject.cpp */; };
+		57CF497021C43B3C008D4ADC /* TcpReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493221C43B3C008D4ADC /* TcpReceiver.cpp */; };
+		57CF497121C43B3C008D4ADC /* TuioListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF493321C43B3C008D4ADC /* TuioListener.h */; };
+		57CF497221C43B3C008D4ADC /* TuioClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF493421C43B3C008D4ADC /* TuioClient.h */; };
+		57CF497321C43B3C008D4ADC /* WebSockSender.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF493521C43B3C008D4ADC /* WebSockSender.o */; };
+		57CF497421C43B3C008D4ADC /* TuioClient.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF493621C43B3C008D4ADC /* TuioClient.o */; };
+		57CF497521C43B3C008D4ADC /* WebSockSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF493721C43B3C008D4ADC /* WebSockSender.h */; };
+		57CF497621C43B3C008D4ADC /* TuioClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493821C43B3C008D4ADC /* TuioClient.cpp */; };
+		57CF497721C43B3C008D4ADC /* LibExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF493921C43B3C008D4ADC /* LibExport.h */; };
+		57CF497821C43B3C008D4ADC /* WebSockSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493A21C43B3C008D4ADC /* WebSockSender.cpp */; };
+		57CF497921C43B3C008D4ADC /* TuioPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF493B21C43B3C008D4ADC /* TuioPoint.h */; };
+		57CF497A21C43B3C008D4ADC /* TcpSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493C21C43B3C008D4ADC /* TcpSender.cpp */; };
+		57CF497B21C43B3C008D4ADC /* TuioComponent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493D21C43B3C008D4ADC /* TuioComponent.cpp */; };
+		57CF497C21C43B3C008D4ADC /* TuioPoint.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF493E21C43B3C008D4ADC /* TuioPoint.o */; };
+		57CF497D21C43B3C008D4ADC /* TuioDispatcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF493F21C43B3C008D4ADC /* TuioDispatcher.cpp */; };
+		57CF497E21C43B3C008D4ADC /* FlashSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494021C43B3C008D4ADC /* FlashSender.h */; };
+		57CF497F21C43B3C008D4ADC /* FlashSender.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF494121C43B3C008D4ADC /* FlashSender.o */; };
+		57CF498021C43B3C008D4ADC /* TuioSymbol.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494221C43B3C008D4ADC /* TuioSymbol.h */; };
+		57CF498121C43B3C008D4ADC /* TuioSymbol.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF494321C43B3C008D4ADC /* TuioSymbol.o */; };
+		57CF498221C43B3C008D4ADC /* TuioSymbol.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF494421C43B3C008D4ADC /* TuioSymbol.cpp */; };
+		57CF498321C43B3C008D4ADC /* TuioDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494521C43B3C008D4ADC /* TuioDispatcher.h */; };
+		57CF498421C43B3C008D4ADC /* TuioDispatcher.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF494621C43B3C008D4ADC /* TuioDispatcher.o */; };
+		57CF498521C43B3C008D4ADC /* TuioComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494721C43B3C008D4ADC /* TuioComponent.h */; };
+		57CF498621C43B3C008D4ADC /* TuioComponent.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF494821C43B3C008D4ADC /* TuioComponent.o */; };
+		57CF498721C43B3C008D4ADC /* TuioTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494921C43B3C008D4ADC /* TuioTime.h */; };
+		57CF498821C43B3C008D4ADC /* TcpSender.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF494A21C43B3C008D4ADC /* TcpSender.o */; };
+		57CF498921C43B3C008D4ADC /* OscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF494B21C43B3C008D4ADC /* OscReceiver.cpp */; };
+		57CF498A21C43B3C008D4ADC /* TcpSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494C21C43B3C008D4ADC /* TcpSender.h */; };
+		57CF498B21C43B3C008D4ADC /* TuioTime.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF494D21C43B3C008D4ADC /* TuioTime.o */; };
+		57CF498C21C43B3C008D4ADC /* TuioPointer.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF494E21C43B3C008D4ADC /* TuioPointer.h */; };
+		57CF498D21C43B3C008D4ADC /* TuioToken.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF494F21C43B3C008D4ADC /* TuioToken.cpp */; };
+		57CF498E21C43B3C008D4ADC /* TuioServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495021C43B3C008D4ADC /* TuioServer.cpp */; };
+		57CF498F21C43B3C008D4ADC /* UdpSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495121C43B3C008D4ADC /* UdpSender.cpp */; };
+		57CF499021C43B3C008D4ADC /* TuioPointer.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF495221C43B3C008D4ADC /* TuioPointer.o */; };
+		57CF499121C43B3C008D4ADC /* TuioBounds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495321C43B3C008D4ADC /* TuioBounds.cpp */; };
+		57CF499221C43B3C008D4ADC /* TuioTime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495421C43B3C008D4ADC /* TuioTime.cpp */; };
+		57CF499321C43B3C008D4ADC /* UdpSender.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF495521C43B3C008D4ADC /* UdpSender.h */; };
+		57CF499421C43B3C008D4ADC /* UdpSender.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF495621C43B3C008D4ADC /* UdpSender.o */; };
+		57CF499521C43B3C008D4ADC /* TuioToken.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF495721C43B3C008D4ADC /* TuioToken.o */; };
+		57CF499621C43B3C008D4ADC /* UdpReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495821C43B3C008D4ADC /* UdpReceiver.cpp */; };
+		57CF499721C43B3C008D4ADC /* TuioToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF495921C43B3C008D4ADC /* TuioToken.h */; };
+		57CF499821C43B3C008D4ADC /* TuioServer.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF495A21C43B3C008D4ADC /* TuioServer.h */; };
+		57CF499921C43B3C008D4ADC /* TuioServer.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF495B21C43B3C008D4ADC /* TuioServer.o */; };
+		57CF499A21C43B3C008D4ADC /* OscReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF495C21C43B3C008D4ADC /* OscReceiver.h */; };
+		57CF499B21C43B3C008D4ADC /* OscReceiver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF495D21C43B3C008D4ADC /* OscReceiver.o */; };
+		57CF499C21C43B3C008D4ADC /* TuioManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495E21C43B3C008D4ADC /* TuioManager.cpp */; };
+		57CF499D21C43B3C008D4ADC /* TuioPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57CF495F21C43B3C008D4ADC /* TuioPoint.cpp */; };
+		57CF499E21C43B3C008D4ADC /* TuioObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF496121C43B3C008D4ADC /* TuioObject.h */; };
+		57CF499F21C43B3C008D4ADC /* TuioBounds.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF496221C43B3C008D4ADC /* TuioBounds.o */; };
+		57CF49A021C43B3C008D4ADC /* TuioBounds.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF496321C43B3C008D4ADC /* TuioBounds.h */; };
+		57CF49A121C43B3C008D4ADC /* TuioObject.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF496421C43B3C008D4ADC /* TuioObject.o */; };
+		57CF49A221C43B3C008D4ADC /* TcpReceiver.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 57CF496521C43B3C008D4ADC /* TcpReceiver.o */; };
+		57CF49A321C43B3C008D4ADC /* TcpReceiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 57CF496621C43B3C008D4ADC /* TcpReceiver.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		578AE3F121C3200300B7C5B6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		57CF491821C43B28008D4ADC /* tuio_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_client.h; sourceTree = "<group>"; };
+		57CF491921C43B28008D4ADC /* tuio_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_c.h; sourceTree = "<group>"; };
+		57CF491A21C43B28008D4ADC /* tuio_udp_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tuio_udp_receiver.cpp; sourceTree = "<group>"; };
+		57CF491B21C43B28008D4ADC /* my_tuio_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_tuio_client.h; sourceTree = "<group>"; };
+		57CF491C21C43B28008D4ADC /* tuio_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_client.c; sourceTree = "<group>"; };
+		57CF491D21C43B28008D4ADC /* tuio_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_c.c; sourceTree = "<group>"; };
+		57CF491E21C43B28008D4ADC /* my_tuio_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_tuio_client.cpp; sourceTree = "<group>"; };
+		57CF491F21C43B28008D4ADC /* tuio_udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_udp_receiver.h; sourceTree = "<group>"; };
+		57CF492921C43B3C008D4ADC /* TuioSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioSource.h; sourceTree = "<group>"; };
+		57CF492A21C43B3C008D4ADC /* TuioPointer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioPointer.cpp; sourceTree = "<group>"; };
+		57CF492B21C43B3C008D4ADC /* FlashSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlashSender.cpp; sourceTree = "<group>"; };
+		57CF492C21C43B3C008D4ADC /* OscSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscSender.h; sourceTree = "<group>"; };
+		57CF492D21C43B3C008D4ADC /* TuioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioManager.h; sourceTree = "<group>"; };
+		57CF492E21C43B3C008D4ADC /* TuioManager.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioManager.o; sourceTree = "<group>"; };
+		57CF492F21C43B3C008D4ADC /* UdpReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpReceiver.h; sourceTree = "<group>"; };
+		57CF493021C43B3C008D4ADC /* UdpReceiver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = UdpReceiver.o; sourceTree = "<group>"; };
+		57CF493121C43B3C008D4ADC /* TuioObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioObject.cpp; sourceTree = "<group>"; };
+		57CF493221C43B3C008D4ADC /* TcpReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TcpReceiver.cpp; sourceTree = "<group>"; };
+		57CF493321C43B3C008D4ADC /* TuioListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioListener.h; sourceTree = "<group>"; };
+		57CF493421C43B3C008D4ADC /* TuioClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioClient.h; sourceTree = "<group>"; };
+		57CF493521C43B3C008D4ADC /* WebSockSender.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = WebSockSender.o; sourceTree = "<group>"; };
+		57CF493621C43B3C008D4ADC /* TuioClient.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioClient.o; sourceTree = "<group>"; };
+		57CF493721C43B3C008D4ADC /* WebSockSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSockSender.h; sourceTree = "<group>"; };
+		57CF493821C43B3C008D4ADC /* TuioClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioClient.cpp; sourceTree = "<group>"; };
+		57CF493921C43B3C008D4ADC /* LibExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibExport.h; sourceTree = "<group>"; };
+		57CF493A21C43B3C008D4ADC /* WebSockSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WebSockSender.cpp; sourceTree = "<group>"; };
+		57CF493B21C43B3C008D4ADC /* TuioPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioPoint.h; sourceTree = "<group>"; };
+		57CF493C21C43B3C008D4ADC /* TcpSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TcpSender.cpp; sourceTree = "<group>"; };
+		57CF493D21C43B3C008D4ADC /* TuioComponent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioComponent.cpp; sourceTree = "<group>"; };
+		57CF493E21C43B3C008D4ADC /* TuioPoint.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioPoint.o; sourceTree = "<group>"; };
+		57CF493F21C43B3C008D4ADC /* TuioDispatcher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioDispatcher.cpp; sourceTree = "<group>"; };
+		57CF494021C43B3C008D4ADC /* FlashSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashSender.h; sourceTree = "<group>"; };
+		57CF494121C43B3C008D4ADC /* FlashSender.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = FlashSender.o; sourceTree = "<group>"; };
+		57CF494221C43B3C008D4ADC /* TuioSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioSymbol.h; sourceTree = "<group>"; };
+		57CF494321C43B3C008D4ADC /* TuioSymbol.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioSymbol.o; sourceTree = "<group>"; };
+		57CF494421C43B3C008D4ADC /* TuioSymbol.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioSymbol.cpp; sourceTree = "<group>"; };
+		57CF494521C43B3C008D4ADC /* TuioDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioDispatcher.h; sourceTree = "<group>"; };
+		57CF494621C43B3C008D4ADC /* TuioDispatcher.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioDispatcher.o; sourceTree = "<group>"; };
+		57CF494721C43B3C008D4ADC /* TuioComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioComponent.h; sourceTree = "<group>"; };
+		57CF494821C43B3C008D4ADC /* TuioComponent.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioComponent.o; sourceTree = "<group>"; };
+		57CF494921C43B3C008D4ADC /* TuioTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioTime.h; sourceTree = "<group>"; };
+		57CF494A21C43B3C008D4ADC /* TcpSender.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TcpSender.o; sourceTree = "<group>"; };
+		57CF494B21C43B3C008D4ADC /* OscReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OscReceiver.cpp; sourceTree = "<group>"; };
+		57CF494C21C43B3C008D4ADC /* TcpSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpSender.h; sourceTree = "<group>"; };
+		57CF494D21C43B3C008D4ADC /* TuioTime.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioTime.o; sourceTree = "<group>"; };
+		57CF494E21C43B3C008D4ADC /* TuioPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioPointer.h; sourceTree = "<group>"; };
+		57CF494F21C43B3C008D4ADC /* TuioToken.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioToken.cpp; sourceTree = "<group>"; };
+		57CF495021C43B3C008D4ADC /* TuioServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioServer.cpp; sourceTree = "<group>"; };
+		57CF495121C43B3C008D4ADC /* UdpSender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UdpSender.cpp; sourceTree = "<group>"; };
+		57CF495221C43B3C008D4ADC /* TuioPointer.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioPointer.o; sourceTree = "<group>"; };
+		57CF495321C43B3C008D4ADC /* TuioBounds.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioBounds.cpp; sourceTree = "<group>"; };
+		57CF495421C43B3C008D4ADC /* TuioTime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioTime.cpp; sourceTree = "<group>"; };
+		57CF495521C43B3C008D4ADC /* UdpSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UdpSender.h; sourceTree = "<group>"; };
+		57CF495621C43B3C008D4ADC /* UdpSender.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = UdpSender.o; sourceTree = "<group>"; };
+		57CF495721C43B3C008D4ADC /* TuioToken.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioToken.o; sourceTree = "<group>"; };
+		57CF495821C43B3C008D4ADC /* UdpReceiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UdpReceiver.cpp; sourceTree = "<group>"; };
+		57CF495921C43B3C008D4ADC /* TuioToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioToken.h; sourceTree = "<group>"; };
+		57CF495A21C43B3C008D4ADC /* TuioServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioServer.h; sourceTree = "<group>"; };
+		57CF495B21C43B3C008D4ADC /* TuioServer.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioServer.o; sourceTree = "<group>"; };
+		57CF495C21C43B3C008D4ADC /* OscReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OscReceiver.h; sourceTree = "<group>"; };
+		57CF495D21C43B3C008D4ADC /* OscReceiver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = OscReceiver.o; sourceTree = "<group>"; };
+		57CF495E21C43B3C008D4ADC /* TuioManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioManager.cpp; sourceTree = "<group>"; };
+		57CF495F21C43B3C008D4ADC /* TuioPoint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TuioPoint.cpp; sourceTree = "<group>"; };
+		57CF496021C43B3C008D4ADC /* Doxyfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Doxyfile; sourceTree = "<group>"; };
+		57CF496121C43B3C008D4ADC /* TuioObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioObject.h; sourceTree = "<group>"; };
+		57CF496221C43B3C008D4ADC /* TuioBounds.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioBounds.o; sourceTree = "<group>"; };
+		57CF496321C43B3C008D4ADC /* TuioBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TuioBounds.h; sourceTree = "<group>"; };
+		57CF496421C43B3C008D4ADC /* TuioObject.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TuioObject.o; sourceTree = "<group>"; };
+		57CF496521C43B3C008D4ADC /* TcpReceiver.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; path = TcpReceiver.o; sourceTree = "<group>"; };
+		57CF496621C43B3C008D4ADC /* TcpReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TcpReceiver.h; sourceTree = "<group>"; };
+		57D8E29621C06E2900892E0C /* libtuio_c.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtuio_c.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		57D8E29421C06E2900892E0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CF498821C43B3C008D4ADC /* TcpSender.o in Frameworks */,
+				57CF498121C43B3C008D4ADC /* TuioSymbol.o in Frameworks */,
+				57CF497321C43B3C008D4ADC /* WebSockSender.o in Frameworks */,
+				57CF497421C43B3C008D4ADC /* TuioClient.o in Frameworks */,
+				57CF499B21C43B3C008D4ADC /* OscReceiver.o in Frameworks */,
+				57CF497C21C43B3C008D4ADC /* TuioPoint.o in Frameworks */,
+				57CF496E21C43B3C008D4ADC /* UdpReceiver.o in Frameworks */,
+				57CF49A221C43B3C008D4ADC /* TcpReceiver.o in Frameworks */,
+				57CF498421C43B3C008D4ADC /* TuioDispatcher.o in Frameworks */,
+				57CF499421C43B3C008D4ADC /* UdpSender.o in Frameworks */,
+				57CF499F21C43B3C008D4ADC /* TuioBounds.o in Frameworks */,
+				57CF496C21C43B3C008D4ADC /* TuioManager.o in Frameworks */,
+				57CF499921C43B3C008D4ADC /* TuioServer.o in Frameworks */,
+				57CF499021C43B3C008D4ADC /* TuioPointer.o in Frameworks */,
+				57CF498621C43B3C008D4ADC /* TuioComponent.o in Frameworks */,
+				57CF498B21C43B3C008D4ADC /* TuioTime.o in Frameworks */,
+				57CF49A121C43B3C008D4ADC /* TuioObject.o in Frameworks */,
+				57CF499521C43B3C008D4ADC /* TuioToken.o in Frameworks */,
+				57CF497F21C43B3C008D4ADC /* FlashSender.o in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578AE3F021C3200200B7C5B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578AE3F121C3200300B7C5B6 /* libc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		57CF491721C43B28008D4ADC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				57CF491E21C43B28008D4ADC /* my_tuio_client.cpp */,
+				57CF491B21C43B28008D4ADC /* my_tuio_client.h */,
+				57CF491D21C43B28008D4ADC /* tuio_c.c */,
+				57CF491921C43B28008D4ADC /* tuio_c.h */,
+				57CF491C21C43B28008D4ADC /* tuio_client.c */,
+				57CF491821C43B28008D4ADC /* tuio_client.h */,
+				57CF491A21C43B28008D4ADC /* tuio_udp_receiver.cpp */,
+				57CF491F21C43B28008D4ADC /* tuio_udp_receiver.h */,
+			);
+			name = src;
+			path = ../src/tuio2_c/src;
+			sourceTree = "<group>";
+		};
+		57CF492821C43B3C008D4ADC /* TUIO2 */ = {
+			isa = PBXGroup;
+			children = (
+				57CF492921C43B3C008D4ADC /* TuioSource.h */,
+				57CF492A21C43B3C008D4ADC /* TuioPointer.cpp */,
+				57CF492B21C43B3C008D4ADC /* FlashSender.cpp */,
+				57CF492C21C43B3C008D4ADC /* OscSender.h */,
+				57CF492D21C43B3C008D4ADC /* TuioManager.h */,
+				57CF492E21C43B3C008D4ADC /* TuioManager.o */,
+				57CF492F21C43B3C008D4ADC /* UdpReceiver.h */,
+				57CF493021C43B3C008D4ADC /* UdpReceiver.o */,
+				57CF493121C43B3C008D4ADC /* TuioObject.cpp */,
+				57CF493221C43B3C008D4ADC /* TcpReceiver.cpp */,
+				57CF493321C43B3C008D4ADC /* TuioListener.h */,
+				57CF493421C43B3C008D4ADC /* TuioClient.h */,
+				57CF493521C43B3C008D4ADC /* WebSockSender.o */,
+				57CF493621C43B3C008D4ADC /* TuioClient.o */,
+				57CF493721C43B3C008D4ADC /* WebSockSender.h */,
+				57CF493821C43B3C008D4ADC /* TuioClient.cpp */,
+				57CF493921C43B3C008D4ADC /* LibExport.h */,
+				57CF493A21C43B3C008D4ADC /* WebSockSender.cpp */,
+				57CF493B21C43B3C008D4ADC /* TuioPoint.h */,
+				57CF493C21C43B3C008D4ADC /* TcpSender.cpp */,
+				57CF493D21C43B3C008D4ADC /* TuioComponent.cpp */,
+				57CF493E21C43B3C008D4ADC /* TuioPoint.o */,
+				57CF493F21C43B3C008D4ADC /* TuioDispatcher.cpp */,
+				57CF494021C43B3C008D4ADC /* FlashSender.h */,
+				57CF494121C43B3C008D4ADC /* FlashSender.o */,
+				57CF494221C43B3C008D4ADC /* TuioSymbol.h */,
+				57CF494321C43B3C008D4ADC /* TuioSymbol.o */,
+				57CF494421C43B3C008D4ADC /* TuioSymbol.cpp */,
+				57CF494521C43B3C008D4ADC /* TuioDispatcher.h */,
+				57CF494621C43B3C008D4ADC /* TuioDispatcher.o */,
+				57CF494721C43B3C008D4ADC /* TuioComponent.h */,
+				57CF494821C43B3C008D4ADC /* TuioComponent.o */,
+				57CF494921C43B3C008D4ADC /* TuioTime.h */,
+				57CF494A21C43B3C008D4ADC /* TcpSender.o */,
+				57CF494B21C43B3C008D4ADC /* OscReceiver.cpp */,
+				57CF494C21C43B3C008D4ADC /* TcpSender.h */,
+				57CF494D21C43B3C008D4ADC /* TuioTime.o */,
+				57CF494E21C43B3C008D4ADC /* TuioPointer.h */,
+				57CF494F21C43B3C008D4ADC /* TuioToken.cpp */,
+				57CF495021C43B3C008D4ADC /* TuioServer.cpp */,
+				57CF495121C43B3C008D4ADC /* UdpSender.cpp */,
+				57CF495221C43B3C008D4ADC /* TuioPointer.o */,
+				57CF495321C43B3C008D4ADC /* TuioBounds.cpp */,
+				57CF495421C43B3C008D4ADC /* TuioTime.cpp */,
+				57CF495521C43B3C008D4ADC /* UdpSender.h */,
+				57CF495621C43B3C008D4ADC /* UdpSender.o */,
+				57CF495721C43B3C008D4ADC /* TuioToken.o */,
+				57CF495821C43B3C008D4ADC /* UdpReceiver.cpp */,
+				57CF495921C43B3C008D4ADC /* TuioToken.h */,
+				57CF495A21C43B3C008D4ADC /* TuioServer.h */,
+				57CF495B21C43B3C008D4ADC /* TuioServer.o */,
+				57CF495C21C43B3C008D4ADC /* OscReceiver.h */,
+				57CF495D21C43B3C008D4ADC /* OscReceiver.o */,
+				57CF495E21C43B3C008D4ADC /* TuioManager.cpp */,
+				57CF495F21C43B3C008D4ADC /* TuioPoint.cpp */,
+				57CF496021C43B3C008D4ADC /* Doxyfile */,
+				57CF496121C43B3C008D4ADC /* TuioObject.h */,
+				57CF496221C43B3C008D4ADC /* TuioBounds.o */,
+				57CF496321C43B3C008D4ADC /* TuioBounds.h */,
+				57CF496421C43B3C008D4ADC /* TuioObject.o */,
+				57CF496521C43B3C008D4ADC /* TcpReceiver.o */,
+				57CF496621C43B3C008D4ADC /* TcpReceiver.h */,
+			);
+			name = TUIO2;
+			path = ../contrib/tuio2/TUIO2;
+			sourceTree = "<group>";
+		};
+		57D8E28D21C06E2900892E0C = {
+			isa = PBXGroup;
+			children = (
+				57CF491721C43B28008D4ADC /* src */,
+				57CF492821C43B3C008D4ADC /* TUIO2 */,
+				57D8E29721C06E2900892E0C /* Products */,
+				578AE3F021C3200200B7C5B6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		57D8E29721C06E2900892E0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57D8E29621C06E2900892E0C /* libtuio_c.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		57D8E29221C06E2900892E0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CF492021C43B28008D4ADC /* tuio_client.h in Headers */,
+				57CF497921C43B3C008D4ADC /* TuioPoint.h in Headers */,
+				57CF498021C43B3C008D4ADC /* TuioSymbol.h in Headers */,
+				57CF497121C43B3C008D4ADC /* TuioListener.h in Headers */,
+				57CF496D21C43B3C008D4ADC /* UdpReceiver.h in Headers */,
+				57CF499E21C43B3C008D4ADC /* TuioObject.h in Headers */,
+				57CF499A21C43B3C008D4ADC /* OscReceiver.h in Headers */,
+				57CF49A321C43B3C008D4ADC /* TcpReceiver.h in Headers */,
+				57CF497E21C43B3C008D4ADC /* FlashSender.h in Headers */,
+				57CF498721C43B3C008D4ADC /* TuioTime.h in Headers */,
+				57CF497521C43B3C008D4ADC /* WebSockSender.h in Headers */,
+				57CF498521C43B3C008D4ADC /* TuioComponent.h in Headers */,
+				57CF492321C43B28008D4ADC /* my_tuio_client.h in Headers */,
+				57CF49A021C43B3C008D4ADC /* TuioBounds.h in Headers */,
+				57CF497221C43B3C008D4ADC /* TuioClient.h in Headers */,
+				57CF497721C43B3C008D4ADC /* LibExport.h in Headers */,
+				57CF496B21C43B3C008D4ADC /* TuioManager.h in Headers */,
+				57CF498C21C43B3C008D4ADC /* TuioPointer.h in Headers */,
+				57CF492721C43B28008D4ADC /* tuio_udp_receiver.h in Headers */,
+				57CF499321C43B3C008D4ADC /* UdpSender.h in Headers */,
+				57CF492121C43B28008D4ADC /* tuio_c.h in Headers */,
+				57CF496721C43B3C008D4ADC /* TuioSource.h in Headers */,
+				57CF499821C43B3C008D4ADC /* TuioServer.h in Headers */,
+				57CF498321C43B3C008D4ADC /* TuioDispatcher.h in Headers */,
+				57CF496A21C43B3C008D4ADC /* OscSender.h in Headers */,
+				57CF498A21C43B3C008D4ADC /* TcpSender.h in Headers */,
+				57CF499721C43B3C008D4ADC /* TuioToken.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57D8E29521C06E2900892E0C /* tuio_c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 57D8E29A21C06E2900892E0C /* Build configuration list for PBXNativeTarget "tuio_c" */;
+			buildPhases = (
+				57D8E29221C06E2900892E0C /* Headers */,
+				57D8E29321C06E2900892E0C /* Sources */,
+				57D8E29421C06E2900892E0C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tuio_c;
+			productName = tuio_c;
+			productReference = 57D8E29621C06E2900892E0C /* libtuio_c.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		57D8E28E21C06E2900892E0C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ruminant;
+				TargetAttributes = {
+					57D8E29521C06E2900892E0C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 57D8E29121C06E2900892E0C /* Build configuration list for PBXProject "tuio2_c" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 57D8E28D21C06E2900892E0C;
+			productRefGroup = 57D8E29721C06E2900892E0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				57D8E29521C06E2900892E0C /* tuio_c */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		57D8E29321C06E2900892E0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CF498E21C43B3C008D4ADC /* TuioServer.cpp in Sources */,
+				57CF498D21C43B3C008D4ADC /* TuioToken.cpp in Sources */,
+				57CF499C21C43B3C008D4ADC /* TuioManager.cpp in Sources */,
+				57CF497D21C43B3C008D4ADC /* TuioDispatcher.cpp in Sources */,
+				57CF492221C43B28008D4ADC /* tuio_udp_receiver.cpp in Sources */,
+				57CF497621C43B3C008D4ADC /* TuioClient.cpp in Sources */,
+				57CF497B21C43B3C008D4ADC /* TuioComponent.cpp in Sources */,
+				57CF492521C43B28008D4ADC /* tuio_c.c in Sources */,
+				57CF499D21C43B3C008D4ADC /* TuioPoint.cpp in Sources */,
+				57CF499621C43B3C008D4ADC /* UdpReceiver.cpp in Sources */,
+				57CF497821C43B3C008D4ADC /* WebSockSender.cpp in Sources */,
+				57CF492421C43B28008D4ADC /* tuio_client.c in Sources */,
+				57CF499221C43B3C008D4ADC /* TuioTime.cpp in Sources */,
+				57CF496821C43B3C008D4ADC /* TuioPointer.cpp in Sources */,
+				57CF499121C43B3C008D4ADC /* TuioBounds.cpp in Sources */,
+				57CF497021C43B3C008D4ADC /* TcpReceiver.cpp in Sources */,
+				57CF496F21C43B3C008D4ADC /* TuioObject.cpp in Sources */,
+				57CF498921C43B3C008D4ADC /* OscReceiver.cpp in Sources */,
+				57CF497A21C43B3C008D4ADC /* TcpSender.cpp in Sources */,
+				57CF492621C43B28008D4ADC /* my_tuio_client.cpp in Sources */,
+				57CF498221C43B3C008D4ADC /* TuioSymbol.cpp in Sources */,
+				57CF498F21C43B3C008D4ADC /* UdpSender.cpp in Sources */,
+				57CF496921C43B3C008D4ADC /* FlashSender.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		57D8E29821C06E2900892E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		57D8E29921C06E2900892E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		57D8E29B21C06E2900892E0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MSG2FEA9;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../contrib/tuio2,
+					../contrib/tuio2/oscpack,
+					../contrib/tuio2/TUIO2,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		57D8E29C21C06E2900892E0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MSG2FEA9;
+				EXECUTABLE_PREFIX = lib;
+				HEADER_SEARCH_PATHS = (
+					../contrib/tuio2,
+					../contrib/tuio2/oscpack,
+					../contrib/tuio2/TUIO2,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		57D8E29121C06E2900892E0C /* Build configuration list for PBXProject "tuio2_c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D8E29821C06E2900892E0C /* Debug */,
+				57D8E29921C06E2900892E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		57D8E29A21C06E2900892E0C /* Build configuration list for PBXNativeTarget "tuio_c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				57D8E29B21C06E2900892E0C /* Debug */,
+				57D8E29C21C06E2900892E0C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 57D8E28E21C06E2900892E0C /* Project object */;
+}
