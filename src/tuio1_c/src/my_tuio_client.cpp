@@ -134,6 +134,18 @@ void TuioDump::refresh(TuioTime frameTime)
 extern "C"
 {
 #endif
+	
+	
+	void my_tuio_client_disconnect(void* wrap)
+	{
+		MyTuioClientAttrs* rec = (MyTuioClientAttrs*)wrap;
+		
+		//OscReceiver* osc_receiver = (OscReceiver*)client->receiver;
+		TuioClient* client = (TuioClient*)rec->client;
+		client->disconnect();
+		
+	}
+	
 	void my_tuio_client_connect(void* wrap, bool blocking)
 	{
 		MyTuioClientAttrs* rec = (MyTuioClientAttrs*)wrap;

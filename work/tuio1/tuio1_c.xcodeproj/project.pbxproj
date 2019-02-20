@@ -7,27 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57D8E2B321C071A500892E0C /* tuio_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D8E2AF21C071A400892E0C /* tuio_c.h */; };
-		57D8E2B421C071A500892E0C /* tuio_udp_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57D8E2B021C071A400892E0C /* tuio_udp_receiver.cpp */; };
-		57D8E2B521C071A500892E0C /* tuio_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 57D8E2B121C071A400892E0C /* tuio_c.c */; };
-		57D8E2B621C071A500892E0C /* tuio_udp_receiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D8E2B221C071A400892E0C /* tuio_udp_receiver.h */; };
-		57D8E2BD21C079E300892E0C /* tuio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D8E2BB21C079E300892E0C /* tuio_client.h */; };
-		57D8E2BE21C079E300892E0C /* tuio_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 57D8E2BC21C079E300892E0C /* tuio_client.c */; };
-		57D8E2C121C07AEF00892E0C /* my_tuio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 57D8E2BF21C07AEF00892E0C /* my_tuio_client.h */; };
-		57D8E2C221C07AEF00892E0C /* my_tuio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57D8E2C021C07AEF00892E0C /* my_tuio_client.cpp */; };
+		571D805B221DE2FC00A5EAE7 /* tuio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 571D8053221DE2FC00A5EAE7 /* tuio_client.h */; };
+		571D805C221DE2FC00A5EAE7 /* tuio_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 571D8054221DE2FC00A5EAE7 /* tuio_c.h */; };
+		571D805D221DE2FC00A5EAE7 /* tuio_udp_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 571D8055221DE2FC00A5EAE7 /* tuio_udp_receiver.cpp */; };
+		571D805E221DE2FC00A5EAE7 /* my_tuio_client.h in Headers */ = {isa = PBXBuildFile; fileRef = 571D8056221DE2FC00A5EAE7 /* my_tuio_client.h */; };
+		571D805F221DE2FC00A5EAE7 /* tuio_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 571D8057221DE2FC00A5EAE7 /* tuio_client.c */; };
+		571D8060221DE2FC00A5EAE7 /* tuio_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 571D8058221DE2FC00A5EAE7 /* tuio_c.c */; };
+		571D8061221DE2FC00A5EAE7 /* my_tuio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 571D8059221DE2FC00A5EAE7 /* my_tuio_client.cpp */; };
+		571D8062221DE2FC00A5EAE7 /* tuio_udp_receiver.h in Headers */ = {isa = PBXBuildFile; fileRef = 571D805A221DE2FC00A5EAE7 /* tuio_udp_receiver.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		571D8053221DE2FC00A5EAE7 /* tuio_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_client.h; sourceTree = "<group>"; };
+		571D8054221DE2FC00A5EAE7 /* tuio_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_c.h; sourceTree = "<group>"; };
+		571D8055221DE2FC00A5EAE7 /* tuio_udp_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tuio_udp_receiver.cpp; sourceTree = "<group>"; };
+		571D8056221DE2FC00A5EAE7 /* my_tuio_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_tuio_client.h; sourceTree = "<group>"; };
+		571D8057221DE2FC00A5EAE7 /* tuio_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_client.c; sourceTree = "<group>"; };
+		571D8058221DE2FC00A5EAE7 /* tuio_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_c.c; sourceTree = "<group>"; };
+		571D8059221DE2FC00A5EAE7 /* my_tuio_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_tuio_client.cpp; sourceTree = "<group>"; };
+		571D805A221DE2FC00A5EAE7 /* tuio_udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_udp_receiver.h; sourceTree = "<group>"; };
 		57D8E29621C06E2900892E0C /* libtuio_c.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtuio_c.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		57D8E2AF21C071A400892E0C /* tuio_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_c.h; sourceTree = "<group>"; };
-		57D8E2B021C071A400892E0C /* tuio_udp_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tuio_udp_receiver.cpp; sourceTree = "<group>"; };
-		57D8E2B121C071A400892E0C /* tuio_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_c.c; sourceTree = "<group>"; };
-		57D8E2B221C071A400892E0C /* tuio_udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_udp_receiver.h; sourceTree = "<group>"; };
-		57D8E2BA21C0750700892E0C /* tuio1_c_test.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tuio1_c_test.c; sourceTree = "<group>"; };
-		57D8E2BB21C079E300892E0C /* tuio_client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tuio_client.h; sourceTree = "<group>"; };
-		57D8E2BC21C079E300892E0C /* tuio_client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tuio_client.c; sourceTree = "<group>"; };
-		57D8E2BF21C07AEF00892E0C /* my_tuio_client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = my_tuio_client.h; sourceTree = "<group>"; };
-		57D8E2C021C07AEF00892E0C /* my_tuio_client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = my_tuio_client.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,11 +40,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		571D8052221DE2FC00A5EAE7 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				571D8053221DE2FC00A5EAE7 /* tuio_client.h */,
+				571D8054221DE2FC00A5EAE7 /* tuio_c.h */,
+				571D8055221DE2FC00A5EAE7 /* tuio_udp_receiver.cpp */,
+				571D8056221DE2FC00A5EAE7 /* my_tuio_client.h */,
+				571D8057221DE2FC00A5EAE7 /* tuio_client.c */,
+				571D8058221DE2FC00A5EAE7 /* tuio_c.c */,
+				571D8059221DE2FC00A5EAE7 /* my_tuio_client.cpp */,
+				571D805A221DE2FC00A5EAE7 /* tuio_udp_receiver.h */,
+			);
+			name = src;
+			path = ../../src/tuio1_c/src;
+			sourceTree = "<group>";
+		};
 		57D8E28D21C06E2900892E0C = {
 			isa = PBXGroup;
 			children = (
-				57D8E2B921C0750700892E0C /* test */,
-				57D8E2AE21C071A400892E0C /* src */,
+				571D8052221DE2FC00A5EAE7 /* src */,
 				57D8E29721C06E2900892E0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,31 +72,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		57D8E2AE21C071A400892E0C /* src */ = {
-			isa = PBXGroup;
-			children = (
-				57D8E2BF21C07AEF00892E0C /* my_tuio_client.h */,
-				57D8E2C021C07AEF00892E0C /* my_tuio_client.cpp */,
-				57D8E2BB21C079E300892E0C /* tuio_client.h */,
-				57D8E2BC21C079E300892E0C /* tuio_client.c */,
-				57D8E2B121C071A400892E0C /* tuio_c.c */,
-				57D8E2AF21C071A400892E0C /* tuio_c.h */,
-				57D8E2B021C071A400892E0C /* tuio_udp_receiver.cpp */,
-				57D8E2B221C071A400892E0C /* tuio_udp_receiver.h */,
-			);
-			name = src;
-			path = ../src/tuio1_c/src;
-			sourceTree = "<group>";
-		};
-		57D8E2B921C0750700892E0C /* test */ = {
-			isa = PBXGroup;
-			children = (
-				57D8E2BA21C0750700892E0C /* tuio1_c_test.c */,
-			);
-			name = test;
-			path = ../src/tuio1_c/test;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -90,10 +79,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57D8E2BD21C079E300892E0C /* tuio_client.h in Headers */,
-				57D8E2B621C071A500892E0C /* tuio_udp_receiver.h in Headers */,
-				57D8E2C121C07AEF00892E0C /* my_tuio_client.h in Headers */,
-				57D8E2B321C071A500892E0C /* tuio_c.h in Headers */,
+				571D805B221DE2FC00A5EAE7 /* tuio_client.h in Headers */,
+				571D805E221DE2FC00A5EAE7 /* my_tuio_client.h in Headers */,
+				571D8062221DE2FC00A5EAE7 /* tuio_udp_receiver.h in Headers */,
+				571D805C221DE2FC00A5EAE7 /* tuio_c.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,10 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57D8E2BE21C079E300892E0C /* tuio_client.c in Sources */,
-				57D8E2C221C07AEF00892E0C /* my_tuio_client.cpp in Sources */,
-				57D8E2B521C071A500892E0C /* tuio_c.c in Sources */,
-				57D8E2B421C071A500892E0C /* tuio_udp_receiver.cpp in Sources */,
+				571D805D221DE2FC00A5EAE7 /* tuio_udp_receiver.cpp in Sources */,
+				571D8060221DE2FC00A5EAE7 /* tuio_c.c in Sources */,
+				571D805F221DE2FC00A5EAE7 /* tuio_client.c in Sources */,
+				571D8061221DE2FC00A5EAE7 /* my_tuio_client.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

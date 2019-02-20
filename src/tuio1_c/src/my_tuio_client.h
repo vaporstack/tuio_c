@@ -30,6 +30,7 @@ extern "C" {
 	 } MyTuioClientAttrs;
 	
 	void my_tuio_client_connect(void* wrap, bool blocking);
+	void my_tuio_client_disconnect(void* wrap);
 	void* my_tuio_client_create(MyTuioClientAttrs attr, unsigned int port);
 	void  my_tuio_client_destroy(void* wrap);
 	

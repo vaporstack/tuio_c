@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		570C80D8221DEA0D00A36659 /* tuio_udp_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570C80D2221DEA0D00A36659 /* tuio_udp_receiver.cpp */; };
+		570C80D9221DEA0D00A36659 /* tuio_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 570C80D4221DEA0D00A36659 /* tuio_client.c */; };
+		570C80DA221DEA0D00A36659 /* tuio_c.c in Sources */ = {isa = PBXBuildFile; fileRef = 570C80D5221DEA0D00A36659 /* tuio_c.c */; };
+		570C80DB221DEA0D00A36659 /* my_tuio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 570C80D6221DEA0D00A36659 /* my_tuio_client.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		570C80C1221DE9E500A36659 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		570C80C3221DE9E500A36659 /* libtuio_c.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtuio_c.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		570C80D0221DEA0D00A36659 /* tuio_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_client.h; sourceTree = "<group>"; };
+		570C80D1221DEA0D00A36659 /* tuio_c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_c.h; sourceTree = "<group>"; };
+		570C80D2221DEA0D00A36659 /* tuio_udp_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tuio_udp_receiver.cpp; sourceTree = "<group>"; };
+		570C80D3221DEA0D00A36659 /* my_tuio_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = my_tuio_client.h; sourceTree = "<group>"; };
+		570C80D4221DEA0D00A36659 /* tuio_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_client.c; sourceTree = "<group>"; };
+		570C80D5221DEA0D00A36659 /* tuio_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_c.c; sourceTree = "<group>"; };
+		570C80D6221DEA0D00A36659 /* my_tuio_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_tuio_client.cpp; sourceTree = "<group>"; };
+		570C80D7221DEA0D00A36659 /* tuio_udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_udp_receiver.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		570C80C0221DE9E500A36659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		570C80BA221DE9E500A36659 = {
+			isa = PBXGroup;
+			children = (
+				570C80CF221DEA0D00A36659 /* src */,
+				570C80C4221DE9E500A36659 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		570C80C4221DE9E500A36659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				570C80C3221DE9E500A36659 /* libtuio_c.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		570C80CF221DEA0D00A36659 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				570C80D0221DEA0D00A36659 /* tuio_client.h */,
+				570C80D1221DEA0D00A36659 /* tuio_c.h */,
+				570C80D2221DEA0D00A36659 /* tuio_udp_receiver.cpp */,
+				570C80D3221DEA0D00A36659 /* my_tuio_client.h */,
+				570C80D4221DEA0D00A36659 /* tuio_client.c */,
+				570C80D5221DEA0D00A36659 /* tuio_c.c */,
+				570C80D6221DEA0D00A36659 /* my_tuio_client.cpp */,
+				570C80D7221DEA0D00A36659 /* tuio_udp_receiver.h */,
+			);
+			name = src;
+			path = ../../src/tuio2_c/src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		570C80C2221DE9E500A36659 /* tuio_c */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 570C80CC221DE9E500A36659 /* Build configuration list for PBXNativeTarget "tuio_c" */;
+			buildPhases = (
+				570C80BF221DE9E500A36659 /* Sources */,
+				570C80C0221DE9E500A36659 /* Frameworks */,
+				570C80C1221DE9E500A36659 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tuio_c;
+			productName = tuio_c;
+			productReference = 570C80C3221DE9E500A36659 /* libtuio_c.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		570C80BB221DE9E500A36659 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = ruminant;
+				TargetAttributes = {
+					570C80C2221DE9E500A36659 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 570C80BE221DE9E500A36659 /* Build configuration list for PBXProject "tuio_c-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 570C80BA221DE9E500A36659;
+			productRefGroup = 570C80C4221DE9E500A36659 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				570C80C2221DE9E500A36659 /* tuio_c */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		570C80BF221DE9E500A36659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				570C80D8221DEA0D00A36659 /* tuio_udp_receiver.cpp in Sources */,
+				570C80DA221DEA0D00A36659 /* tuio_c.c in Sources */,
+				570C80D9221DEA0D00A36659 /* tuio_client.c in Sources */,
+				570C80DB221DEA0D00A36659 /* my_tuio_client.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		570C80CA221DE9E500A36659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		570C80CB221DE9E500A36659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		570C80CD221DE9E500A36659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MSG2FEA9;
+				HEADER_SEARCH_PATHS = (
+					../../contrib/tuio2/oscpack,
+					../../contrib/tuio2,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		570C80CE221DE9E500A36659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W7MSG2FEA9;
+				HEADER_SEARCH_PATHS = (
+					../../contrib/tuio2/oscpack,
+					../../contrib/tuio2,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		570C80BE221DE9E500A36659 /* Build configuration list for PBXProject "tuio_c-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570C80CA221DE9E500A36659 /* Debug */,
+				570C80CB221DE9E500A36659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		570C80CC221DE9E500A36659 /* Build configuration list for PBXNativeTarget "tuio_c" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				570C80CD221DE9E500A36659 /* Debug */,
+				570C80CE221DE9E500A36659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 570C80BB221DE9E500A36659 /* Project object */;
+}
