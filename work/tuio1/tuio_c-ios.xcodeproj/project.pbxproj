@@ -13,6 +13,23 @@
 		571D8084221DE34200A5EAE7 /* my_tuio_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 571D807F221DE34200A5EAE7 /* my_tuio_client.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		57A43A01221DED680003799E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A439FD221DED680003799E /* tuio1.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 571D7EA4221DD45B00A5EAE7;
+			remoteInfo = tuio;
+		};
+		57A43A03221DED710003799E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57A439FD221DED680003799E /* tuio1.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 571D7EA3221DD45B00A5EAE7;
+			remoteInfo = tuio;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		571D806A221DE31C00A5EAE7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +52,7 @@
 		571D807E221DE34200A5EAE7 /* tuio_c.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tuio_c.c; sourceTree = "<group>"; };
 		571D807F221DE34200A5EAE7 /* my_tuio_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = my_tuio_client.cpp; sourceTree = "<group>"; };
 		571D8080221DE34200A5EAE7 /* tuio_udp_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tuio_udp_receiver.h; sourceTree = "<group>"; };
+		57A439FD221DED680003799E /* tuio1.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = tuio1.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +69,7 @@
 		571D8063221DE31C00A5EAE7 = {
 			isa = PBXGroup;
 			children = (
+				57A439FD221DED680003799E /* tuio1.xcodeproj */,
 				571D8078221DE34200A5EAE7 /* src */,
 				571D806D221DE31C00A5EAE7 /* Products */,
 			);
@@ -80,6 +99,14 @@
 			path = ../../src/tuio1_c/src;
 			sourceTree = "<group>";
 		};
+		57A439FE221DED680003799E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57A43A02221DED680003799E /* libtuio.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +121,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				57A43A04221DED710003799E /* PBXTargetDependency */,
 			);
 			name = tuio_c;
 			productName = tuio_c;
@@ -124,12 +152,28 @@
 			mainGroup = 571D8063221DE31C00A5EAE7;
 			productRefGroup = 571D806D221DE31C00A5EAE7 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 57A439FE221DED680003799E /* Products */;
+					ProjectRef = 57A439FD221DED680003799E /* tuio1.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				571D806B221DE31C00A5EAE7 /* tuio_c */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		57A43A02221DED680003799E /* libtuio.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libtuio.a;
+			remoteRef = 57A43A01221DED680003799E /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		571D8068221DE31C00A5EAE7 /* Sources */ = {
@@ -144,6 +188,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		57A43A04221DED710003799E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = tuio;
+			targetProxy = 57A43A03221DED710003799E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		571D8073221DE31C00A5EAE7 /* Debug */ = {
